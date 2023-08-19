@@ -1,24 +1,11 @@
 {
   "name": "activitypub-helper",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "GitHub API helper",
   "homepage": "https://github.com/juunini/activitypub-helper-ts",
   "repository": "juunini/activitypub-helper-ts",
   "license": "MIT",
   "author": "juunini",
-  "files": [".well-known", "nodeinfo"],
-  "keywords": [
-    "activitypub",
-    "activitypub-helper",
-    "activitypub-helper-ts",
-    "activitypub-helper-typescript",
-    "activitypub-helper-nodejs",
-    "activitypub-helper-node",
-    "activitypub-helper-node-ts",
-    "activitypub-helper-node-typescript",
-    "activitypub-helper-nodejs-ts",
-    "activitypub-helper-nodejs-typescript"
-  ],
   "targets": {
     ".well-known": {
       "source": "src/.well-known/index.ts",
