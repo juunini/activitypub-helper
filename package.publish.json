@@ -1,0 +1,11 @@
+{
+  "name": "activitypub-helper",
+  "version": "0.2.0",
+  "description": "GitHub API helper",
+  "homepage": "https://github.com/juunini/activitypub-helper-ts",
+  "repository": "juunini/activitypub-helper-ts",
+  "license": "MIT",
+  "author": "juunini",
+  "files": [".well-known", "nodeinfo"],
+  "dependencies": {}
+}
