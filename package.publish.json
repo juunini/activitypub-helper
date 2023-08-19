@@ -7,5 +7,17 @@
   "license": "MIT",
   "author": "juunini",
   "files": [".well-known", "nodeinfo"],
+  "keywords": [
+    "activitypub",
+    "activitypub-helper",
+    "activitypub-helper-ts",
+    "activitypub-helper-typescript",
+    "activitypub-helper-nodejs",
+    "activitypub-helper-node",
+    "activitypub-helper-node-ts",
+    "activitypub-helper-node-typescript",
+    "activitypub-helper-nodejs-ts",
+    "activitypub-helper-nodejs-typescript"
+  ],
   "dependencies": {}
 }
