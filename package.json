@@ -1,6 +1,6 @@
 {
   "name": "activitypub-helper",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "GitHub API helper",
   "homepage": "https://github.com/juunini/activitypub-helper-ts",
   "repository": "juunini/activitypub-helper-ts",
@@ -34,6 +34,7 @@
   },
   "scripts": {
     "build": "sh scripts/build.sh",
+    "publish:prepare": "sh scripts/prepare-publish.sh",
     "publish": "sh scripts/publish.sh",
     "publish:local": "sh scripts/publish-local.sh",
     "lint": "eslint --ext .ts ."
