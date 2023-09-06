@@ -19,6 +19,7 @@ export class WebFinger {
   }
 
   public response(id: string, uid?: string) {
+		const aliases = [`https://${this.host}/@${id}`]
 		const links = [
 			{
 				rel: 'http://webfinger.net/rel/profile-page',
@@ -28,6 +29,7 @@ export class WebFinger {
 		]
 
 		if (uid) {
+			aliases.push(`https://${this.host}/users/${uid}`)
 			links.push({
 				rel: 'self',
 				type: 'application/activity+json',
@@ -36,7 +38,7 @@ export class WebFinger {
 		}
     return {
 			subject: `acct:${id}@${this.host}`,
-			aliases: [`https://${this.host}/@${id}`, `https://${this.host}/users/${uid ?? id}`],
+			aliases,
 			links
 		}
   }
