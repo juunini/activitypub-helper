@@ -3,7 +3,6 @@ export class WebFinger {
 
 	constructor(
 		private readonly host: string,
-		private readonly subscribePath: string
 	) {}
 
   public parseAcct(resource: string) {
@@ -20,25 +19,25 @@ export class WebFinger {
   }
 
   public response(id: string, uid?: string) {
+		const links = [
+			{
+				rel: 'http://webfinger.net/rel/profile-page',
+				type: 'text/html',
+				href: `https://${this.host}/@${id}`
+			}
+		]
+
+		if (uid) {
+			links.push({
+				rel: 'self',
+				type: 'application/activity+json',
+				href: `https://${this.host}/users/${uid}`
+			})
+		}
     return {
 			subject: `acct:${id}@${this.host}`,
 			aliases: [`https://${this.host}/@${id}`, `https://${this.host}/users/${uid ?? id}`],
-			links: [
-				{
-					rel: 'http://webfinger.net/rel/profile-page',
-					type: 'text/html',
-					href: `https://${this.host}/@${id}`
-				},
-				{
-					rel: 'self',
-					type: 'application/activity+json',
-					href: `https://${this.host}/users/${uid ?? id}`
-				},
-				{
-					rel: 'http://ostatus.org/schema/1.0/subscribe',
-					template: `https://${this.host}/${this.subscribePath}?uri={uri}`
-				}
-			]
+			links
 		}
   }
 }

@@ -27,19 +27,26 @@ bun add activitypub-helper
 
 ### .well-known/webfinger
 
-Must be `/.well-known/webfinger` endpoint
+Must be `/.well-known/webfinger` endpoint  
+
+Others should request you to `/.well-known/webfinger?resource=acct:${username}@${host}`  
+or `...?resource=acct:@${username}@${host}`
 
 ```ts
 import { WebFinger } from 'activitypub-helper/.well-known'
 
 const webfinger = new WebFinger('yodangang.express', 'authorize_interaction')
-const { id, host } = webfinger.parseAcct('acct:juunini@yodangang.express')
+const { id, host } = webfinger.parseAcct('acct:juunini@yodangang.express') // or acct:@juunini@yodangang.express
 // => { id: 'juunini', host 'yodangang.express' }
 
 const response = webfinger.response(
   id,
   '7bb45d5a-6222-423a-afdc-154e6ae7951a' // optional. if has different id for Database primary key
 )
+response.links.push({
+  "rel": "http://ostatus.org/schema/1.0/subscribe",
+  "template": "https://yodangang.express/authorize-follow?acct={uri}"
+})
 // {
 //   subject: 'acct:juunini@yodangang-express',
 //   aliases: ['https://yodangang-express/@juunini', 'https://yodangang-express/users/7bb45d5a-6222-423a-afdc-154e6ae7951a'],
@@ -56,12 +63,12 @@ const response = webfinger.response(
 //     },
 //     {
 //       rel: 'http://ostatus.org/schema/1.0/subscribe',
-//       template: 'https://yodangang-express/${subscribePath}?uri={uri}'
+//       template: 'https://yodangang.express/authorize-follow?acct={uri}'
 //     }
 //   ]
 // }
 
-new Response(response, {
+new Response(JSON.stringify(response), {
   headers: {
     'Content-Type': WebFinger.CONTENT_TYPE,
   }
@@ -86,7 +93,7 @@ const response = nodeinfo.response()
 //   ]
 // }
 
-new Response(response, {
+new Response(JSON.stringify(response), {
   headers: {
     'Content-Type': NodeInfo.CONTENT_TYPE,
   }
@@ -142,7 +149,7 @@ const response = nodeinfo.response()
 //   metadata: {}
 // }
 
-new Response(response, {
+new Response(JSON.stringify(response), {
   headers: {
     'Content-Type': NodeInfo.CONTENT_TYPE,
   }
