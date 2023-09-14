@@ -49,7 +49,9 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
+    "node-html-parser": "^6.1.9",
     "parcel": "^2.9.3",
+    "turndown": "^7.1.2",
     "typescript": "*"
   },
   "peerDependencies": {

@@ -23,5 +23,6 @@
   "files": [
     "./src/.well-known/index.ts",
     "./src/nodeinfo/index.ts",
+    "./src/vocabulary/properties/index.ts"
   ]
 }

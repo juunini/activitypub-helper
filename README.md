@@ -23,6 +23,12 @@ pnpm add activitypub-helper
 bun add activitypub-helper
 ```
 
+## Vocabulary from
+
+- https://www.w3.org/TR/activitypub/
+- https://www.w3.org/ns/activitystreams
+- https://www.w3.org/TR/activitystreams-vocabulary/
+
 ## Usage
 
 ### .well-known/webfinger
