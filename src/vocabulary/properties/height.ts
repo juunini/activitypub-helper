@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#height
  * @range xsd:nonNegativeInteger
  * @functional True
- * @domain [[Link](#dfn-link)](#dfn-link)
+ * @domain [Link](#dfn-link)
  * @example
  * ```json
  * {

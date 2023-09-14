@@ -2,9 +2,9 @@
  * Identifies a [Collection](#dfn-collection) containing objects considered to be responses to this object.
  *
  * @see https://www.w3.org/ns/activitystreams#replies
- * @range [[Collection](#dfn-collection)](#dfn-collection)
+ * @range [Collection](#dfn-collection)
  * @functional True
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

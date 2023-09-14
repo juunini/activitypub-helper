@@ -4,8 +4,8 @@
 When used within a [Relationship](#dfn-relationship) describes the entity to which the [subject](#dfn-subject) is related.
  *
  * @see https://www.w3.org/ns/activitystreams#object
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Activity](#dfn-activity)](#dfn-activity) | [[Relationship](#dfn-relationship)](#dfn-relationship)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Activity](#dfn-activity) | [[Relationship](#dfn-relationship)](#dfn-relationship)
  * @example
  * ```json
  * {

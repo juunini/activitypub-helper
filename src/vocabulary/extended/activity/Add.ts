@@ -2,8 +2,8 @@
  * Indicates that the actor has added the object to the target. If the target property is not explicitly specified, the target would need to be determined implicitly by context. The origin can be used to identify the context from which the object originated.
  *
  * @see https://www.w3.org/ns/activitystreams#Add
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

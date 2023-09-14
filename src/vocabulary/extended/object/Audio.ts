@@ -2,8 +2,8 @@
  * Represents an audio document of any kind.
  *
  * @see https://www.w3.org/ns/activitystreams#Audio
- * @properties Inherits all properties from [[Document](#dfn-document)](#dfn-document).
- * @extends [[Document](#dfn-document)](#dfn-document)
+ * @properties Inherits all properties from [Document](#dfn-document).
+ * @extends [Document](#dfn-document)
  * @example
  * ```json
  * {

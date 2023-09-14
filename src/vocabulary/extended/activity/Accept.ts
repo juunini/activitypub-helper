@@ -2,8 +2,8 @@
  * Indicates that the actor accepts the object. The target property can be used in certain circumstances to indicate the context into which the object has been accepted.
  *
  * @see https://www.w3.org/ns/activitystreams#Accept
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * Represents an organization.
  *
  * @see https://www.w3.org/ns/activitystreams#Organization
- * @properties Inherits all properties from [[Object](#dfn-object)](#dfn-object).
- * @extends [[Object](#dfn-object)](#dfn-object)
+ * @properties Inherits all properties from [Object](#dfn-object).
+ * @extends [Object](#dfn-object)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * Identifies a resource attached or related to an object that potentially requires special handling. The intent is to provide a model that is at least semantically similar to attachments in email.
  *
  * @see https://www.w3.org/ns/activitystreams#attachment
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

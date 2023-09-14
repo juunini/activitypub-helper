@@ -2,8 +2,8 @@
  * Identifies an entity that provides a preview of this object.
  *
  * @see https://www.w3.org/ns/activitystreams#preview
- * @range [[Link](#dfn-link)](#dfn-link) | [[Object](#dfn-object)](#dfn-object)
- * @domain [[Link](#dfn-link)](#dfn-link) | [[Object](#dfn-object)](#dfn-object)
+ * @range [Link](#dfn-link) | [Object](#dfn-object)
+ * @domain [Link](#dfn-link) | [Object](#dfn-object)
  * @example
  * ```json
  * {

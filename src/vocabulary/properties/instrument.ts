@@ -2,8 +2,8 @@
  * Identifies one or more objects used (or to be used) in the completion of an [Activity](#dfn-activity).
  *
  * @see https://www.w3.org/ns/activitystreams#instrument
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Activity](#dfn-activity)](#dfn-activity)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Activity](#dfn-activity)
  * @example
  * ```json
  * {

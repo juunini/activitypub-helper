@@ -2,8 +2,8 @@
  * Indicates an entity that describes an image for this object. Unlike the icon property, there are no aspect ratio or display size limitations assumed.
  *
  * @see https://www.w3.org/ns/activitystreams#image
- * @range [[Image](#dfn-image)](#dfn-image) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [[Image](#dfn-image)](#dfn-image) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

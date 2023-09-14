@@ -2,9 +2,9 @@
  * Identifies the [Collection](#dfn-collection) to which a [CollectionPage](#dfn-collectionpage) objects items belong.
  *
  * @see https://www.w3.org/ns/activitystreams#partOf
- * @range [[Link](#dfn-link)](#dfn-link) | [[Collection](#dfn-collection)](#dfn-collection)
+ * @range [Link](#dfn-link) | [Collection](#dfn-collection)
  * @functional True
- * @domain [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage)
+ * @domain [CollectionPage](#dfn-collectionpage)
  * @example
  * ```json
  * {

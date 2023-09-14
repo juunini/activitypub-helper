@@ -2,8 +2,8 @@
  * Indicates an entity that describes an icon for this object. The image should have an aspect ratio of one (horizontal) to one (vertical) and should be suitable for presentation at a small size.
  *
  * @see https://www.w3.org/ns/activitystreams#icon
- * @range [[Image](#dfn-image)](#dfn-image) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [[Image](#dfn-image)](#dfn-image) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

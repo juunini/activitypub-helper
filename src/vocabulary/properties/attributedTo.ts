@@ -2,8 +2,8 @@
  * Identifies one or more entities to which this object is attributed. The attributed entities might not be Actors. For instance, an object might be attributed to the completion of another activity.
  *
  * @see https://www.w3.org/ns/activitystreams#attributedTo
- * @range [[Link](#dfn-link)](#dfn-link) | [[Object](#dfn-object)](#dfn-object)
- * @domain [[Link](#dfn-link)](#dfn-link) | [[Object](#dfn-object)](#dfn-object)
+ * @range [Link](#dfn-link) | [Object](#dfn-object)
+ * @domain [Link](#dfn-link) | [Object](#dfn-object)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * Represents a video document of any kind.
  *
  * @see https://www.w3.org/ns/activitystreams#Video
- * @properties Inherits all properties from [[Document](#dfn-document)](#dfn-document).
- * @extends [[Document](#dfn-document)](#dfn-document)
+ * @properties Inherits all properties from [Document](#dfn-document).
+ * @extends [Document](#dfn-document)
  * @example
  * ```json
  * {

@@ -6,7 +6,7 @@ When used on an [Object](#dfn-object), identifies the MIME media type of the val
  * @see https://www.w3.org/ns/activitystreams#mediaType
  * @range MIME Media Type
  * @functional True
- * @domain [[Link](#dfn-link)](#dfn-link) | [[Object](#dfn-object)](#dfn-object)
+ * @domain [Link](#dfn-link) | [Object](#dfn-object)
  * @example
  * ```json
  * {

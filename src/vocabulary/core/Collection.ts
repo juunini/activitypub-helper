@@ -6,8 +6,8 @@ Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-c
  * @see https://www.w3.org/ns/activitystreams#Collection
  * @properties [[totalItems](#dfn-totalitems)](#dfn-totalitems) | [[current](#dfn-current)](#dfn-current) | [[first](#dfn-first)](#dfn-first) | [[last](#dfn-last)](#dfn-last) | [[items](#dfn-items)](#dfn-items)
 
-Inherits all properties from [[Object](#dfn-object)](#dfn-object).
- * @extends [[Object](#dfn-object)](#dfn-object)
+Inherits all properties from [Object](#dfn-object).
+ * @extends [Object](#dfn-object)
  * @example
  * ```json
  * {

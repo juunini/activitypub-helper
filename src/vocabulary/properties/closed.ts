@@ -2,7 +2,7 @@
  * Indicates that a question has been closed, and answers are no longer accepted.
  *
  * @see https://www.w3.org/ns/activitystreams#closed
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link) | xsd:dateTime | xsd:boolean
+ * @range [Object](#dfn-object) | [Link](#dfn-link) | xsd:dateTime | xsd:boolean
  * @domain [[Question](#dfn-question)](#dfn-question)
  * @example
  * ```json

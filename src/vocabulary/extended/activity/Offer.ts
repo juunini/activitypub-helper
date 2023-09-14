@@ -2,8 +2,8 @@
  * Indicates that the actor is offering the object. If specified, the target indicates the entity to which the object is being offered.
  *
  * @see https://www.w3.org/ns/activitystreams#Offer
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * Indicates that the actor likes, recommends or endorses the object. The target and origin typically have no defined meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Like
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

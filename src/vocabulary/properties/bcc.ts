@@ -2,8 +2,8 @@
  * Identifies one or more Objects that are part of the private secondary audience of this Object.
  *
  * @see https://www.w3.org/ns/activitystreams#bcc
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

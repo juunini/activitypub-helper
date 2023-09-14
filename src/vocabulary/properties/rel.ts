@@ -5,7 +5,7 @@ In the \[[HTML5](#bib-HTML5)\], any string not containing the "space" U+0020, "t
  *
  * @see https://www.w3.org/ns/activitystreams#rel
  * @range \[[\[RFC5988\](#bib-RFC5988)](#bib-RFC5988)\] or [\[\[HTML5\]\](http://www.w3.org/TR/html5/document-metadata.html#attr-link-rel)](http://www.w3.org/TR/html5/document-metadata.html#attr-link-rel) Link Relation
- * @domain [[Link](#dfn-link)](#dfn-link)
+ * @domain [Link](#dfn-link)
  * @example
  * ```json
  * {

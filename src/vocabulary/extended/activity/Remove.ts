@@ -2,8 +2,8 @@
  * Indicates that the actor is removing the object. If specified, the origin indicates the context from which the object is being removed.
  *
  * @see https://www.w3.org/ns/activitystreams#Remove
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

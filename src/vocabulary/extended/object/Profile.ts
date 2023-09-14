@@ -4,8 +4,8 @@
  * @see https://www.w3.org/ns/activitystreams#Profile
  * @properties [[describes](#dfn-describes)](#dfn-describes)
 
-Inherits all properties from [[Object](#dfn-object)](#dfn-object).
- * @extends [[Object](#dfn-object)](#dfn-object)
+Inherits all properties from [Object](#dfn-object).
+ * @extends [Object](#dfn-object)
  * @example
  * ```json
  * {

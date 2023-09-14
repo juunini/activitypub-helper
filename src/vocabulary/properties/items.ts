@@ -2,8 +2,8 @@
  * Identifies the items contained in a collection. The items might be ordered or unordered.
  *
  * @see https://www.w3.org/ns/activitystreams#items
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link) | Ordered List of \[[[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link) \]
- * @domain [[Collection](#dfn-collection)](#dfn-collection)
+ * @range [Object](#dfn-object) | [Link](#dfn-link) | Ordered List of \[[Object](#dfn-object) | [Link](#dfn-link) \]
+ * @domain [Collection](#dfn-collection)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * Identifies one or more links to representations of the object
  *
  * @see https://www.w3.org/ns/activitystreams#url
- * @range xsd:anyURI | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range xsd:anyURI | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

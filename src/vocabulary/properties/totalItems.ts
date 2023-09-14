@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#totalItems
  * @range xsd:nonNegativeInteger
  * @functional True
- * @domain [[Collection](#dfn-collection)](#dfn-collection)
+ * @domain [Collection](#dfn-collection)
  * @example
  * ```json
  * {

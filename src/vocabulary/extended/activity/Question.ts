@@ -6,8 +6,8 @@ Either of the [anyOf](#dfn-anyof) and [oneOf](#dfn-oneof) properties _MAY_ be us
  * @see https://www.w3.org/ns/activitystreams#Question
  * @properties [[oneOf](#dfn-oneof)](#dfn-oneof) | [[anyOf](#dfn-anyof)](#dfn-anyof) | [[closed](#dfn-closed)](#dfn-closed)
 
-Inherits all properties from [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity).
- * @extends [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity).
+Inherits all properties from [IntransitiveActivity](#dfn-intransitiveactivity).
+ * @extends [IntransitiveActivity](#dfn-intransitiveactivity).
  * @example
  * ```json
  * {

@@ -2,9 +2,9 @@
  * In a paged [Collection](#dfn-collection), indicates the next page of items.
  *
  * @see https://www.w3.org/ns/activitystreams#next
- * @range [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage) | [[Link](#dfn-link)](#dfn-link)
+ * @range [CollectionPage](#dfn-collectionpage) | [Link](#dfn-link)
  * @functional True
- * @domain [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage)
+ * @domain [CollectionPage](#dfn-collectionpage)
  * @example
  * ```json
  * {

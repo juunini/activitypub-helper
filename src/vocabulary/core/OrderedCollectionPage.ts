@@ -4,8 +4,8 @@
  * @see https://www.w3.org/ns/activitystreams#OrderedCollectionPage
  * @properties [[startIndex](#dfn-startindex)](#dfn-startindex)
 
-Inherits all properties from [[OrderedCollection](#dfn-orderedcollection)](#dfn-orderedcollection) and [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage).
- * @extends [[OrderedCollection](#dfn-orderedcollection)](#dfn-orderedcollection) | [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage)
+Inherits all properties from [OrderedCollection](#dfn-orderedcollection) and [CollectionPage](#dfn-collectionpage).
+ * @extends [OrderedCollection](#dfn-orderedcollection) | [CollectionPage](#dfn-collectionpage)
  * @example
  * ```json
  * {

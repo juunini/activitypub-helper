@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#units
  * @range "cm" | " feet" | " inches" | " km" | " m" | " miles" | xsd:anyURI
  * @functional True
- * @domain [[Place](#dfn-place)](#dfn-place)
+ * @domain [Place](#dfn-place)
  * @example
  * ```json
  * {

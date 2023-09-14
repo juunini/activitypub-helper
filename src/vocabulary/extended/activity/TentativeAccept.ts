@@ -2,8 +2,8 @@
  * A specialization of [Accept](#dfn-accept) indicating that the acceptance is tentative.
  *
  * @see https://www.w3.org/ns/activitystreams#TentativeAccept
- * @properties Inherits all properties from [[Accept](#dfn-accept)](#dfn-accept).
- * @extends [[Accept](#dfn-accept)](#dfn-accept)
+ * @properties Inherits all properties from [Accept](#dfn-accept).
+ * @extends [Accept](#dfn-accept)
  * @example
  * ```json
  * {

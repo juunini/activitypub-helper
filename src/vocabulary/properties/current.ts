@@ -2,9 +2,9 @@
  * In a paged [Collection](#dfn-collection), indicates the page that contains the most recently updated member items.
  *
  * @see https://www.w3.org/ns/activitystreams#current
- * @range [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage) | [[Link](#dfn-link)](#dfn-link)
+ * @range [CollectionPage](#dfn-collectionpage) | [Link](#dfn-link)
  * @functional True
- * @domain [[Collection](#dfn-collection)](#dfn-collection)
+ * @domain [Collection](#dfn-collection)
  * @example
  * ```json
  * {

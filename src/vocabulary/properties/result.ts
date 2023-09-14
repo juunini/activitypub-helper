@@ -2,8 +2,8 @@
  * Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource.
  *
  * @see https://www.w3.org/ns/activitystreams#result
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Activity](#dfn-activity)](#dfn-activity)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Activity](#dfn-activity)
  * @example
  * ```json
  * {

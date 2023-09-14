@@ -2,8 +2,8 @@
  * Indicates that the actor has created the object.
  *
  * @see https://www.w3.org/ns/activitystreams#Create
- * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
- * @extends [[Activity](#dfn-activity)](#dfn-activity)
+ * @properties Inherits all properties from [Activity](#dfn-activity)
+ * @extends [Activity](#dfn-activity)
  * @example
  * ```json
  * {

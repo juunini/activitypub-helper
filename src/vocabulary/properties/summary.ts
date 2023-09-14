@@ -3,7 +3,7 @@
  *
  * @see https://www.w3.org/ns/activitystreams#summary
  * @range xsd:string | rdf:langString
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

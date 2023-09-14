@@ -2,9 +2,9 @@
  * Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple actors. The actor _MAY_ be specified using an indirect [Link](#dfn-link).
  *
  * @see https://www.w3.org/ns/activitystreams#actor
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
  * @subproperty [[attributedTo](#dfn-attributedto)](#dfn-attributedto)
- * @domain [[Activity](#dfn-activity)](#dfn-activity)
+ * @domain [Activity](#dfn-activity)
  * @example
  * ```json
  * {

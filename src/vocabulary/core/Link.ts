@@ -3,7 +3,7 @@
  *
  * @see https://www.w3.org/ns/activitystreams#Link
  * @properties [[href](#dfn-href)](#dfn-href) | [[rel](#dfn-rel)](#dfn-rel) | [[mediaType](#dfn-mediatype)](#dfn-mediatype) | [[name](#dfn-name)](#dfn-name) | [[hreflang](#dfn-hreflang)](#dfn-hreflang) | [[height](#dfn-height)](#dfn-height) | [[width](#dfn-width)](#dfn-width) | [[preview](#dfn-preview)](#dfn-preview)
- * @disjointWith [[Object](#dfn-object)](#dfn-object)
+ * @disjointWith [Object](#dfn-object)
  * @example
  * ```json
  * {

@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#radius
  * @range xsd:float \[>= 0.0f\]
  * @functional True
- * @domain [[Place](#dfn-place)](#dfn-place)
+ * @domain [Place](#dfn-place)
  * @example
  * ```json
  * {

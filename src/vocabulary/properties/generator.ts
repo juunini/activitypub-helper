@@ -2,8 +2,8 @@
  * Identifies the entity (e.g. an application) that generated the object.
  *
  * @see https://www.w3.org/ns/activitystreams#generator
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

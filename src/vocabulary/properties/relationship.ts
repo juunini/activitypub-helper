@@ -2,7 +2,7 @@
  * On a [Relationship](#dfn-relationship) object, the relationship property identifies the kind of relationship that exists between [subject](#dfn-subject) and [object](#dfn-object).
  *
  * @see https://www.w3.org/ns/activitystreams#relationship
- * @range [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object)
  * @domain [[Relationship](#dfn-relationship)](#dfn-relationship)
  * @example
  * ```json

@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#longitude
  * @range xsd:float
  * @functional True
- * @domain [[Place](#dfn-place)](#dfn-place)
+ * @domain [Place](#dfn-place)
  * @example
  * ```json
  * {

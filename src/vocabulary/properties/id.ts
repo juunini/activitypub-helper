@@ -4,7 +4,7 @@
  * @see @id
  * @range anyURI
  * @functional True
- * @domain [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
+ * @domain [Object](#dfn-object) | [Link](#dfn-link)
  * @example
  * ```json
  * {

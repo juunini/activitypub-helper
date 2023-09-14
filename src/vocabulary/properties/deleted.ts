@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#deleted
  * @range xsd:dateTime
  * @functional True
- * @domain [[Tombstone](#dfn-tombstone)](#dfn-tombstone)
+ * @domain [Tombstone](#dfn-tombstone)
  * @example
  * ```json
  * {

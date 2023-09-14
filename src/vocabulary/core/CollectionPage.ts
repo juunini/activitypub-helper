@@ -4,8 +4,8 @@
  * @see https://www.w3.org/ns/activitystreams#CollectionPage
  * @properties [[partOf](#dfn-partof)](#dfn-partof) | [[next](#dfn-next)](#dfn-next) | [[prev](#dfn-prev)](#dfn-prev)
 
-Inherits all properties from [[Collection](#dfn-collection)](#dfn-collection).
- * @extends [[Collection](#dfn-collection)](#dfn-collection)
+Inherits all properties from [Collection](#dfn-collection).
+ * @extends [Collection](#dfn-collection)
  * @example
  * ```json
  * {

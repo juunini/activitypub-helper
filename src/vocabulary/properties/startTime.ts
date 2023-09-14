@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#startTime
  * @range xsd:dateTime
  * @functional True
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

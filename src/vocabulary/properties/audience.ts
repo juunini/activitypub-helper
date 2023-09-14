@@ -2,8 +2,8 @@
  * Identifies one or more entities that represent the total population of entities for which the object can considered to be relevant.
  *
  * @see https://www.w3.org/ns/activitystreams#audience
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

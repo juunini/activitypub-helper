@@ -5,7 +5,7 @@ The content _MAY_ be expressed using multiple language-tagged values.
  *
  * @see https://www.w3.org/ns/activitystreams#content
  * @range xsd:string | rdf:langString
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#hreflang
  * @range \[[\[BCP47\](#bib-BCP47)](#bib-BCP47)\] Language Tag
  * @functional True
- * @domain [[Link](#dfn-link)](#dfn-link)
+ * @domain [Link](#dfn-link)
  * @example
  * ```json
  * {

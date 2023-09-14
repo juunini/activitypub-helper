@@ -2,9 +2,9 @@
  * In a paged [Collection](#dfn-collection), identifies the previous page of items.
  *
  * @see https://www.w3.org/ns/activitystreams#prev
- * @range [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage) | [[Link](#dfn-link)](#dfn-link)
+ * @range [CollectionPage](#dfn-collectionpage) | [Link](#dfn-link)
  * @functional True
- * @domain [[CollectionPage](#dfn-collectionpage)](#dfn-collectionpage)
+ * @domain [CollectionPage](#dfn-collectionpage)
  * @example
  * ```json
  * {

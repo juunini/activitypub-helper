@@ -4,10 +4,10 @@
 See [5.2 Representing Relationships Between Entities](#connections) for additional information.
  *
  * @see https://www.w3.org/ns/activitystreams#Relationship
- * @properties [[subject](#dfn-subject)](#dfn-subject) | [[object](#dfn-object)](#dfn-object) | [[relationship](#dfn-relationship)](#dfn-relationship)
+ * @properties [[subject](#dfn-subject)](#dfn-subject) | [Object](#dfn-object) | [[relationship](#dfn-relationship)](#dfn-relationship)
 
-Inherits all properties from [[Object](#dfn-object)](#dfn-object).
- * @extends [[Object](#dfn-object)](#dfn-object)
+Inherits all properties from [Object](#dfn-object).
+ * @extends [Object](#dfn-object)
  * @example
  * ```json
  * {

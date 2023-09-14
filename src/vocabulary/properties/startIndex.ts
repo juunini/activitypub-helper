@@ -4,7 +4,7 @@
  * @see https://www.w3.org/ns/activitystreams#startIndex
  * @range xsd:nonNegativeInteger
  * @functional True
- * @domain [[OrderedCollectionPage](#dfn-orderedcollectionpage)](#dfn-orderedcollectionpage)
+ * @domain [OrderedCollectionPage](#dfn-orderedcollectionpage)
  * @example
  * ```json
  * {

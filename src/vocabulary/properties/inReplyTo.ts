@@ -2,8 +2,8 @@
  * Indicates one or more entities for which this object is considered a response.
  *
  * @see https://www.w3.org/ns/activitystreams#inReplyTo
- * @range [[Object](#dfn-object)](#dfn-object) | [[Link](#dfn-link)](#dfn-link)
- * @domain [[Object](#dfn-object)](#dfn-object)
+ * @range [Object](#dfn-object) | [Link](#dfn-link)
+ * @domain [Object](#dfn-object)
  * @example
  * ```json
  * {

@@ -2,8 +2,8 @@
  * A specialized [Link](#dfn-link) that represents an @mention.
  *
  * @see https://www.w3.org/ns/activitystreams#Mention
- * @properties Inherits all properties from [[Link](#dfn-link)](#dfn-link).
- * @extends [[Link](#dfn-link)](#dfn-link)
+ * @properties Inherits all properties from [Link](#dfn-link).
+ * @extends [Link](#dfn-link)
  * @example
  * ```json
  * {
