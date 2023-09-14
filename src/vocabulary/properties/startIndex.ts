@@ -25,4 +25,4 @@
  * }
  * ```
  */
-export type startIndex = any
+export type startIndex = number

@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies an entity that provides a preview of this object.
  *
@@ -23,4 +26,4 @@
  * }
  * ```
  */
-export type preview = any
+export type preview = string | Link | ObjectType

@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies one or more entities to which this object is attributed. The attributed entities might not be Actors. For instance, an object might be attributed to the completion of another activity.
  *
@@ -35,4 +38,4 @@
  * }
  * ```
  */
-export type attributedTo = any
+export type attributedTo = Array<string | ObjectType | Link>

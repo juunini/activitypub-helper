@@ -1,3 +1,6 @@
+import type { Link } from '../core/Link'
+import type { Collection } from '../core/Collection'
+
 /**
  * Identifies the [Collection](#dfn-collection) to which a [CollectionPage](#dfn-collectionpage) objects items belong.
  *
@@ -26,4 +29,4 @@
  * }
  * ```
  */
-export type partOf = any
+export type partOf = string | Link | Collection

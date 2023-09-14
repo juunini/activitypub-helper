@@ -22,4 +22,4 @@ In the \[[HTML5](#bib-HTML5)\], any string not containing the "space" U+0020, "t
  * }
  * ```
  */
-export type rel = any
+export type rel = string[]

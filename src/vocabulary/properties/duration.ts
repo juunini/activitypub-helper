@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type duration = any
+export type duration = string

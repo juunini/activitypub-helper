@@ -1,3 +1,6 @@
+import type { CollectionPage } from '../core/CollectionPage'
+import type { Link } from '../core/Link'
+
 /**
  * In a paged [Collection](#dfn-collection), indicates the page that contains the most recently updated member items.
  *
@@ -39,4 +42,4 @@
  * }
  * ```
  */
-export type current = any
+export type current = string | Link | CollectionPage

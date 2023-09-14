@@ -1,3 +1,6 @@
+import type { Link, Object as ObjectType } from '../core'
+import type { Note } from '../extended/object'
+
 /**
  * When used within an [Activity](#dfn-activity), describes the direct object of the activity. For instance, in the activity "John added a movie to his wishlist", the object of the activity is the movie added.
 
@@ -44,4 +47,4 @@ When used within a [Relationship](#dfn-relationship) describes the entity to whi
  * }
  * ```
  */
-export type _object = any
+export type _object = string | Link | ObjectType | Note | Array<string | Link | ObjectType | Note>

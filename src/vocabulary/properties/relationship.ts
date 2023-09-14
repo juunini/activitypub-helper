@@ -1,3 +1,5 @@
+import type { Object as ObjectType } from '../core/Object'
+
 /**
  * On a [Relationship](#dfn-relationship) object, the relationship property identifies the kind of relationship that exists between [subject](#dfn-subject) and [object](#dfn-object).
  *
@@ -22,4 +24,4 @@
  * }
  * ```
  */
-export type relationship = any
+export type relationship = string | ObjectType

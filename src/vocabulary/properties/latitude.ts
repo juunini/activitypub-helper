@@ -18,4 +18,4 @@
  * }
  * ```
  */
-export type latitude = any
+export type latitude = number

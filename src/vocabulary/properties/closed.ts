@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Indicates that a question has been closed, and answers are no longer accepted.
  *
@@ -14,4 +17,4 @@
  * }
  * ```
  */
-export type closed = any
+export type closed = string | boolean | Link | ObjectType

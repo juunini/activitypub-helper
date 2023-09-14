@@ -15,4 +15,4 @@
  * }
  * ```
  */
-export type deleted = any
+export type deleted = string

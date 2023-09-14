@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Describes an indirect object of the activity _from_ which the activity is directed. The precise meaning of the origin is the object of the English preposition "from". For instance, in the activity "John moved an item to List B from List A", the origin of the activity is "List A".
  *
@@ -23,4 +26,4 @@
  * }
  * ```
  */
-export type origin = any
+export type origin = ObjectType | Link | string

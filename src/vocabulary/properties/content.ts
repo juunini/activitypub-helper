@@ -37,5 +37,5 @@ The content _MAY_ be expressed using multiple language-tagged values.
  * }
  * ```
  */
-export type content = any
-export type contentMap = any
+export type content = string
+export type contentMap = Record<string, string>

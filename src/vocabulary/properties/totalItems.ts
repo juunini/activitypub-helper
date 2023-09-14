@@ -25,4 +25,4 @@
  * }
  * ```
  */
-export type totalItems = any
+export type totalItems = number

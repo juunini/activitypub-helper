@@ -1,3 +1,6 @@
+import type { Link } from '../core/Link'
+import type { Image } from '../extended/object/Image'
+
 /**
  * Indicates an entity that describes an icon for this object. The image should have an aspect ratio of one (horizontal) to one (vertical) and should be suitable for presentation at a small size.
  *
@@ -45,4 +48,4 @@
  * }
  * ```
  */
-export type icon = any
+export type icon = string | Link | Image | Array<string | Link | Image>

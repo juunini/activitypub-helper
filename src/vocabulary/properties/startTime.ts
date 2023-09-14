@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type startTime = any
+export type startTime = string

@@ -1,3 +1,7 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+import type { Place } from '../extended/object/Place'
+
 /**
  * Indicates one or more physical or logical locations associated with the object.
  *
@@ -21,4 +25,4 @@
  * }
  * ```
  */
-export type location = any
+export type location = Place | ObjectType | Link

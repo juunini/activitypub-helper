@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies the context within which the object exists or an activity was performed.
 
@@ -30,4 +33,4 @@ The notion of "context" used is intentionally vague. The intended function is to
  * }
  * ```
  */
-export type context = any
+export type context = string | ObjectType | Link | Array<string | Link | ObjectType>

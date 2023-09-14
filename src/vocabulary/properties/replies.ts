@@ -1,3 +1,5 @@
+import type { Collection } from '../core/Collection'
+
 /**
  * Identifies a [Collection](#dfn-collection) containing objects considered to be responses to this object.
  *
@@ -28,4 +30,4 @@
  * }
  * ```
  */
-export type replies = any
+export type replies = Collection

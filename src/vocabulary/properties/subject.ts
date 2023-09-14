@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * On a [Relationship](#dfn-relationship) object, the subject property identifies one of the connected individuals. For instance, for a Relationship object describing "John is related to Sally", subject would refer to John.
  *
@@ -23,4 +26,4 @@
  * }
  * ```
  */
-export type subject = any
+export type subject = string | Link | ObjectType

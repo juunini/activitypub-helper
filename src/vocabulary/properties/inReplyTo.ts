@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Indicates one or more entities for which this object is considered a response.
  *
@@ -28,4 +31,4 @@
  * }
  * ```
  */
-export type inReplyTo = any
+export type inReplyTo = string | ObjectType | Link | Array<string | ObjectType | Link>

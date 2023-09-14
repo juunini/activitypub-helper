@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies one or more entities that represent the total population of entities for which the object can considered to be relevant.
  *
@@ -18,4 +21,4 @@
  * }
  * ```
  */
-export type audience = any
+export type audience = ObjectType | Link | Array<ObjectType | Link>

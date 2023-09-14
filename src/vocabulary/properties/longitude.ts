@@ -18,4 +18,4 @@
  * }
  * ```
  */
-export type longitude = any
+export type longitude = number

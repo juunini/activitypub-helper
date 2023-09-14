@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies one or more objects used (or to be used) in the completion of an [Activity](#dfn-activity).
  *
@@ -22,4 +25,4 @@
  * }
  * ```
  */
-export type instrument = any
+export type instrument = string | Link | ObjectType

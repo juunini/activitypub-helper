@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies the entity (e.g. an application) that generated the object.
  *
@@ -18,4 +21,4 @@
  * }
  * ```
  */
-export type generator = any
+export type generator = string | ObjectType | Link

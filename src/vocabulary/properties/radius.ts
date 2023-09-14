@@ -18,4 +18,4 @@
  * }
  * ```
  */
-export type radius = any
+export type radius = number

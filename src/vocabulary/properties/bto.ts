@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies an Object that is part of the private primary audience of this Object.
  *
@@ -19,4 +22,4 @@
  * }
  * ```
  */
-export type bto = any
+export type bto = Array<string | Link | ObjectType>

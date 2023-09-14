@@ -1,7 +1,6 @@
 /**
  * Provides the globally unique identifier for an [Object](#dfn-object) or [Link](#dfn-link).
  *
- * @see @id
  * @range anyURI
  * @functional True
  * @domain [Object](#dfn-object) | [Link](#dfn-link)
@@ -14,4 +13,4 @@
  * }
  * ```
  */
-export type id = any
+export type id = string

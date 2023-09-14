@@ -26,5 +26,5 @@
  * }
  * ```
  */
-export type summary = any
-export type summaryMap = any
+export type summary = string
+export type summaryMap = Record<string, string>

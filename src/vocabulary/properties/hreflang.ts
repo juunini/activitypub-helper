@@ -17,4 +17,4 @@
  * }
  * ```
  */
-export type hreflang = any
+export type hreflang = string

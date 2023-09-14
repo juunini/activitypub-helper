@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type updated = any
+export type updated = string

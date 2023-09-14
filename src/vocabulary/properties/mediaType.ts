@@ -19,4 +19,4 @@ When used on an [Object](#dfn-object), identifies the MIME media type of the val
  * }
  * ```
  */
-export type mediaType = any
+export type mediaType = string

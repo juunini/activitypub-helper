@@ -1,3 +1,6 @@
+import type { Link } from '../core/Link'
+import type { CollectionPage } from '../core/CollectionPage'
+
 /**
  * In a paged [Collection](#dfn-collection), indicates the next page of items.
  *
@@ -37,4 +40,4 @@
  * }
  * ```
  */
-export type next = any
+export type next = Link | string | CollectionPage

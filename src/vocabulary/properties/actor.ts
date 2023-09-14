@@ -1,3 +1,6 @@
+import type { Link } from '../core/Link'
+import type { Object as ObjectType } from '../core/Object'
+
 /**
  * Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple actors. The actor _MAY_ be specified using an indirect [Link](#dfn-link).
  *
@@ -45,4 +48,4 @@
  * }
  * ```
  */
-export type actor = any
+export type actor = string | ObjectType | Link | Array<string | ObjectType | Link>

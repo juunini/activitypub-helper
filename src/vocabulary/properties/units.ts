@@ -18,4 +18,4 @@
  * }
  * ```
  */
-export type units = any
+export type units = 'cm' | 'feet' | 'inches' | 'km' | 'm' | 'miles' | string

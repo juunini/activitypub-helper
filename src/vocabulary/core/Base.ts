@@ -1,7 +1,7 @@
-import type { context, id, type } from '../properties'
+import type { id, type } from '../properties'
 
 export interface Base {
-  '@context'?: context
+  '@context'?: string | string[]
   type?: type
   id?: id
   [key: string]: any

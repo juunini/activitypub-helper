@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type published = any
+export type published = string

@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * One or more "tags" that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference.
  *
@@ -21,5 +24,5 @@
  * }
  * ```
  */
-export type tag = any
+export type tag = Array<string | Link | ObjectType>
 export type tags = any

@@ -1,3 +1,7 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+import type { Note } from '../extended/object'
+
 /**
  * Identifies the items contained in a collection. The items might be ordered or unordered.
  *
@@ -42,5 +46,5 @@
  * }
  * ```
  */
-export type items = any
-export type orderedItems = any
+export type items = Array<Link | ObjectType | Note>
+export type orderedItems = items

@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type width = any
+export type width = number

@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies an entity considered to be part of the public primary audience of an Object
  *
@@ -19,4 +22,4 @@
  * }
  * ```
  */
-export type to = any
+export type to = Array<string | Link | ObjectType>

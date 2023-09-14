@@ -1,7 +1,6 @@
 /**
  * Identifies the [Object](#dfn-object) or [Link](#dfn-link) type. Multiple values may be specified.
  *
- * @see @type
  * @range anyURI
  * @domain [Object](#dfn-object) | [Link](#dfn-link)
  * @example
@@ -13,4 +12,4 @@
  * }
  * ```
  */
-export type type = any
+export type type = string

@@ -1,3 +1,5 @@
+import type { Link } from '../core/Link'
+
 /**
  * Identifies one or more links to representations of the object
  *
@@ -44,4 +46,4 @@
  * }
  * ```
  */
-export type url = any
+export type url = string | Link | Array<string | Link>

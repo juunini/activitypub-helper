@@ -24,5 +24,5 @@
  * }
  * ```
  */
-export type name = any
-export type nameMap = any
+export type name = string
+export type nameMap = Record<string, string>

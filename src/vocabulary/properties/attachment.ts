@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Identifies a resource attached or related to an object that potentially requires special handling. The intent is to provide a model that is at least semantically similar to attachments in email.
  *
@@ -20,5 +23,5 @@
  * }
  * ```
  */
-export type attachment = any
-export type attachments = any
+export type attachment = Array<ObjectType | Link>
+export type attachments = attachment

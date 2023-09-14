@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type endTime = any
+export type endTime = string

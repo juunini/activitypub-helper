@@ -18,4 +18,4 @@
  * }
  * ```
  */
-export type altitude = any
+export type altitude = number

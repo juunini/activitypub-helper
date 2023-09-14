@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type href = any
+export type href = string

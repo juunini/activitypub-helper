@@ -16,4 +16,4 @@
  * }
  * ```
  */
-export type height = any
+export type height = number

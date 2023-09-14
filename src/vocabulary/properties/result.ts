@@ -1,3 +1,6 @@
+import type { Object as ObjectType } from '../core/Object'
+import type { Link } from '../core/Link'
+
 /**
  * Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource.
  *
@@ -22,4 +25,4 @@
  * }
  * ```
  */
-export type result = any
+export type result = string | Link | ObjectType
