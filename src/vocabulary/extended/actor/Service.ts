@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * Represents a service of any kind.
  *
  * @see https://www.w3.org/ns/activitystreams#Service
- * @properties Inherits all properties from [Object](#dfn-object).
- * @extends [Object](#dfn-object)
+ * @properties Inherits all properties from [[Object](#dfn-object)](#dfn-object).
+ * @extends [[Object](#dfn-object)](#dfn-object)
  * @example
  * ```json
  * {
@@ -13,4 +15,6 @@
  * }
  * ```
  */
-export type Service = any
+export interface Service extends ObjectType {
+  type: 'Service'
+}

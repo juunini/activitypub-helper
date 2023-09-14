@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * Represents an individual person.
  *
  * @see https://www.w3.org/ns/activitystreams#Person
- * @properties Inherits all properties from [Object](#dfn-object).
- * @extends [Object](#dfn-object)
+ * @properties Inherits all properties from [[Object](#dfn-object)](#dfn-object).
+ * @extends [[Object](#dfn-object)](#dfn-object)
  * @example
  * ```json
  * {
@@ -13,4 +15,6 @@
  * }
  * ```
  */
-export type Person = any
+export interface Person extends ObjectType {
+  type: 'Person'
+}

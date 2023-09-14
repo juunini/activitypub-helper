@@ -21,8 +21,10 @@ fetch('https://www.w3.org/TR/activitystreams-vocabulary/')
         break
       case 'actor':
         crawlingActor(doc)
+        break
       case 'object':
         crawlingObject(doc)
+        break
     }
   })
 
@@ -33,7 +35,11 @@ const crawlingActivity = (doc: HTMLElement) => crawling(doc, "#activity-types > 
 
 ${contents.replace(`export type ${name} = any`, `export interface ${name} extends Activity {\n  type: '${name}'\n}`)}`
 })
-const crawlingActor = (doc: HTMLElement) => crawling(doc, "#actor-types > table", "./src/vocabulary/extended/actor")
+const crawlingActor = (doc: HTMLElement) => crawling(doc, "#actor-types > table", "./src/vocabulary/extended/actor", (contents: string, name: string) => {
+  return `import type { Object as ObjectType } from '../../core/Object'
+
+${contents.replace(`export type ${name} = any`, `export interface ${name} extends ObjectType {\n  type: '${name}'\n}`)}`
+})
 const crawlingObject = (doc: HTMLElement) => crawling(doc, "#object-types > table", "./src/vocabulary/extended/object")
 
 function crawling(html: HTMLElement, selector: string, path: string, contentsCallback?: (contents: string, name: string) => string) {
