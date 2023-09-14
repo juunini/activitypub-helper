@@ -1,3 +1,6 @@
+import type { Collection } from './Collection'
+import type { orderedItems } from '../properties/items'
+
 /**
  * A subtype of [Collection](#dfn-collection) in which members of the logical collection are assumed to always be strictly ordered.
  *
@@ -24,4 +27,6 @@
  * }
  * ```
  */
-export type OrderedCollection = any
+export interface OrderedCollection extends Collection {
+  orderedItems?: orderedItems
+}

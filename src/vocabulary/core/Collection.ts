@@ -1,3 +1,12 @@
+import type { Object as ObjectType } from './Object'
+import type {
+  totalItems,
+  current,
+  first,
+  last,
+  items
+} from '../properties'
+
 /**
  * A Collection is a subtype of [Object](#dfn-object) that represents ordered or unordered sets of [Object](#dfn-object) or [Link](#dfn-link) instances.
 
@@ -28,4 +37,10 @@ Inherits all properties from [Object](#dfn-object).
  * }
  * ```
  */
-export type Collection = any
+export interface Collection extends ObjectType {
+  totalItems?: totalItems
+  current?: current
+  first?: first
+  last?: last
+  items?: items
+}

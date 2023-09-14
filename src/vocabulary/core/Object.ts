@@ -1,3 +1,33 @@
+import type { Base } from './Base'
+import type {
+  attachment,
+  attributedTo,
+  audience,
+  content,
+  context,
+  name,
+  endTime,
+  generator,
+  icon,
+  image,
+  inReplyTo,
+  location,
+  preview,
+  published,
+  replies,
+  startTime,
+  summary,
+  tag,
+  updated,
+  url,
+  to,
+  bto,
+  cc,
+  bcc,
+  mediaType,
+  duration
+} from '../properties'
+
 /**
  * Describes an object of any kind. The Object type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as [Activity](#dfn-activity), [IntransitiveActivity](#dfn-intransitiveactivity), [Collection](#dfn-collection) and [OrderedCollection](#dfn-orderedcollection).
  *
@@ -14,4 +44,31 @@
  * }
  * ```
  */
-export type Object = any
+export interface Object extends Base {
+  attachment?: attachment
+  attributedTo?: attributedTo
+  audience?: audience
+  content?: content
+  context?: context
+  name?: name
+  endTime?: endTime
+  generator?: generator
+  icon?: icon
+  image?: image
+  inReplyTo?: inReplyTo
+  location?: location
+  preview?: preview
+  published?: published
+  replies?: replies
+  startTime?: startTime
+  summary?: summary
+  tag?: tag
+  updated?: updated
+  url?: url
+  to?: to
+  bto?: bto
+  cc?: cc
+  bcc?: bcc
+  mediaType?: mediaType
+  duration?: duration
+}

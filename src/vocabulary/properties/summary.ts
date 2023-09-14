@@ -27,3 +27,4 @@
  * ```
  */
 export type summary = any
+export type summaryMap = any

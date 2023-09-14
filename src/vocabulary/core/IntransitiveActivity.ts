@@ -1,3 +1,5 @@
+import type { Activity } from './Activity'
+
 /**
  * Instances of IntransitiveActivity are a subtype of Activity representing intransitive actions. The [object](#dfn-object) property is therefore inappropriate for these activities.
  *
@@ -21,4 +23,4 @@
  * }
  * ```
  */
-export type IntransitiveActivity = any
+export interface IntransitiveActivity extends Activity {}

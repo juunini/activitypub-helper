@@ -1,3 +1,13 @@
+import type { Object as ObjectType } from './Object'
+import type {
+  actor,
+  object as objectProperty,
+  target,
+  result,
+  origin,
+  instrument
+} from '../properties'
+
 /**
  * An Activity is a subtype of [Object](#dfn-object) that describes some form of action that may happen, is currently happening, or has already happened. The Activity type itself serves as an abstract base type for all types of activities. It is important to note that the Activity type itself does not carry any specific semantics about the kind of action being taken.
  *
@@ -23,4 +33,11 @@ Inherits all properties from [Object](#dfn-object).
  * }
  * ```
  */
-export type Activity = any
+export interface Activity extends ObjectType {
+  actor?: actor
+  object?: objectProperty
+  target?: target
+  result?: result
+  origin?: origin
+  instrument?: instrument
+}

@@ -21,3 +21,4 @@
  * ```
  */
 export type attachment = any
+export type attachments = any

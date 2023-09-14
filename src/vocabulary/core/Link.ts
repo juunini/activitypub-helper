@@ -1,3 +1,15 @@
+import type { Base } from './Base'
+import type {
+  href,
+  rel,
+  mediaType,
+  name,
+  hreflang,
+  height,
+  width,
+  preview
+} from '../properties'
+
 /**
  * A Link is an indirect, qualified reference to a resource identified by a URL. The fundamental model for links is established by \[ [RFC5988](#bib-RFC5988)\]. Many of the properties defined by the Activity Vocabulary allow values that are either instances of [Object](#dfn-object) or [Link](#dfn-link). When a [Link](#dfn-link) is used, it establishes a [qualified relation](http://patterns.dataincubator.org/book/qualified-relation.html) connecting the subject (the containing object) to the resource identified by the [href](#dfn-href). Properties of the [Link](#dfn-link) are properties of the reference as opposed to properties of the resource.
  *
@@ -16,4 +28,13 @@
  * }
  * ```
  */
-export type Link = any
+export interface Link extends Base {
+  href?: href
+  rel?: rel
+  mediaType?: mediaType
+  name?: name
+  hreflang?: hreflang
+  height?: height
+  width?: width
+  preview?: preview
+}

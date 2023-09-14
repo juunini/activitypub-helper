@@ -22,3 +22,4 @@
  * ```
  */
 export type tag = any
+export type tags = any

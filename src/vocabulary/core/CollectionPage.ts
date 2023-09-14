@@ -1,3 +1,10 @@
+import type { Collection } from './Collection'
+import type {
+  partOf,
+  next,
+  prev
+} from '../properties'
+
 /**
  * Used to represent distinct subsets of items from a Collection. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-core/#dfn-collectionpage) for a complete description of the CollectionPage object.
  *
@@ -27,4 +34,8 @@ Inherits all properties from [Collection](#dfn-collection).
  * }
  * ```
  */
-export type CollectionPage = any
+export interface CollectionPage extends Collection {
+  partOf?: partOf
+  next?: next
+  prev?: prev
+}

@@ -25,3 +25,4 @@
  * ```
  */
 export type name = any
+export type nameMap = any

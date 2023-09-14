@@ -1,3 +1,7 @@
+import type { OrderedCollection } from './OrderedCollection'
+import type { CollectionPage } from './CollectionPage'
+import type { startIndex } from '../properties'
+
 /**
  * Used to represent ordered subsets of items from an OrderedCollection. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-core/#dfn-orderedcollectionpage) for a complete description of the OrderedCollectionPage object.
  *
@@ -27,4 +31,6 @@ Inherits all properties from [OrderedCollection](#dfn-orderedcollection) and [Co
  * }
  * ```
  */
-export type OrderedCollectionPage = any
+export interface OrderedCollectionPage extends OrderedCollection, CollectionPage {
+  startIndex?: startIndex
+}
