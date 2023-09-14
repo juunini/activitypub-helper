@@ -1,11 +1,13 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor is calling the target's attention the object.
 
 The origin typically has no defined meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Announce
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -28,4 +30,6 @@ The origin typically has no defined meaning.
  * }
  * ```
  */
-export type Announce = any
+export interface Announce extends Activity {
+  type: 'Announce'
+}

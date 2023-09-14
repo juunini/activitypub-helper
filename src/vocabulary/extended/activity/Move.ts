@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor has moved object from origin to target. If the origin or target are not specified, either can be determined by context.
  *
  * @see https://www.w3.org/ns/activitystreams#Move
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -26,4 +28,6 @@
  * }
  * ```
  */
-export type Move = any
+export interface Move extends Activity {
+  type: 'Move'
+}

@@ -1,9 +1,11 @@
+import type { IntransitiveActivity } from '../../core/IntransitiveActivity'
+
 /**
  * Indicates that the actor is traveling to target from origin. Travel is an IntransitiveObject whose actor specifies the direct object. If the target or origin are not specified, either can be determined by context.
  *
  * @see https://www.w3.org/ns/activitystreams#Travel
- * @properties Inherits all properties from [IntransitiveActivity](#dfn-intransitiveactivity).
- * @extends [IntransitiveActivity](#dfn-intransitiveactivity)
+ * @properties Inherits all properties from [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity).
+ * @extends [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity)
  * @example
  * ```json
  * {
@@ -25,4 +27,6 @@
  * }
  * ```
  */
-export type Travel = any
+export interface Travel extends IntransitiveActivity {
+  type: 'Travel'
+}

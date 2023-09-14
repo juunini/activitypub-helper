@@ -1,11 +1,13 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor is undoing the object. In most cases, the object will be an [Activity](#dfn-activity) describing some previously performed action (for instance, a person may have previously "liked" an article but, for whatever reason, might choose to undo that like at some later point in time).
 
 The target and origin typically have no defined meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Undo
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -22,4 +24,6 @@ The target and origin typically have no defined meaning.
  * }
  * ```
  */
-export type Undo = any
+export interface Undo extends Activity {
+  type: 'Undo'
+}

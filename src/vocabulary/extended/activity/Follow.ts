@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor is "following" the object. Following is defined in the sense typically used within Social systems in which the actor is interested in any activity performed by or on the object. The target and origin typically have no defined meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Follow
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -21,4 +23,6 @@
  * }
  * ```
  */
-export type Follow = any
+export interface Follow extends Activity {
+  type: 'Follow'
+}

@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor is "flagging" the object. Flagging is defined in the sense common to many social platforms as reporting content as being inappropriate for any number of reasons.
  *
  * @see https://www.w3.org/ns/activitystreams#Flag
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -18,4 +20,6 @@
  * }
  * ```
  */
-export type Flag = any
+export interface Flag extends Activity {
+  type: 'Flag'
+}

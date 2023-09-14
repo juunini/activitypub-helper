@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor has left the object. The target and origin typically have no meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Leave
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -36,4 +38,6 @@
  * }
  * ```
  */
-export type Leave = any
+export interface Leave extends Activity {
+  type: 'Leave'
+}

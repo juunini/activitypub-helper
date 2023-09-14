@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor has read the object.
  *
  * @see https://www.w3.org/ns/activitystreams#Read
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -18,4 +20,6 @@
  * }
  * ```
  */
-export type Read = any
+export interface Read extends Activity {
+  type: 'Read'
+}

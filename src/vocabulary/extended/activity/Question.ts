@@ -1,3 +1,6 @@
+import type { IntransitiveActivity } from '../../core/IntransitiveActivity'
+import type { oneOf, anyOf, closed } from '../../properties'
+
 /**
  * Represents a question being asked. Question objects are an extension of [IntransitiveActivity](#dfn-intransitiveactivity). That is, the Question object is an Activity, but the direct object is the question itself and therefore it would not contain an [object](#dfn-object) property.
 
@@ -6,8 +9,8 @@ Either of the [anyOf](#dfn-anyof) and [oneOf](#dfn-oneof) properties _MAY_ be us
  * @see https://www.w3.org/ns/activitystreams#Question
  * @properties [[oneOf](#dfn-oneof)](#dfn-oneof) | [[anyOf](#dfn-anyof)](#dfn-anyof) | [[closed](#dfn-closed)](#dfn-closed)
 
-Inherits all properties from [IntransitiveActivity](#dfn-intransitiveactivity).
- * @extends [IntransitiveActivity](#dfn-intransitiveactivity).
+Inherits all properties from [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity).
+ * @extends [[IntransitiveActivity](#dfn-intransitiveactivity)](#dfn-intransitiveactivity).
  * @example
  * ```json
  * {
@@ -35,4 +38,9 @@ Inherits all properties from [IntransitiveActivity](#dfn-intransitiveactivity).
  * }
  * ```
  */
-export type Question = any
+export interface Question extends IntransitiveActivity {
+  type: 'Question'
+  oneOf?: oneOf
+  anyOf?: anyOf
+  closed?: closed
+}

@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * Indicates that the actor is rejecting the object. The target and origin typically have no defined meaning.
  *
  * @see https://www.w3.org/ns/activitystreams#Reject
- * @properties Inherits all properties from [Activity](#dfn-activity)
- * @extends [Activity](#dfn-activity)
+ * @properties Inherits all properties from [[Activity](#dfn-activity)](#dfn-activity).
+ * @extends [[Activity](#dfn-activity)](#dfn-activity)
  * @example
  * ```json
  * {
@@ -25,4 +27,6 @@
  * }
  * ```
  */
-export type Reject = any
+export interface Reject extends Activity {
+  type: 'Reject'
+}

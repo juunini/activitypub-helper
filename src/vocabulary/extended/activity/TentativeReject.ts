@@ -1,9 +1,11 @@
+import type { Activity } from '../../core/Activity'
+
 /**
  * A specialization of [Reject](#dfn-reject) in which the rejection is considered tentative.
  *
  * @see https://www.w3.org/ns/activitystreams#TentativeReject
- * @properties Inherits all properties from [Reject](#dfn-reject).
- * @extends [Reject](#dfn-reject)
+ * @properties Inherits all properties from [[Reject](#dfn-reject)](#dfn-reject).
+ * @extends [[Reject](#dfn-reject)](#dfn-reject)
  * @example
  * ```json
  * {
@@ -25,4 +27,6 @@
  * }
  * ```
  */
-export type TentativeReject = any
+export interface TentativeReject extends Activity {
+  type: 'TentativeReject'
+}

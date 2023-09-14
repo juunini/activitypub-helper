@@ -28,11 +28,15 @@ fetch('https://www.w3.org/TR/activitystreams-vocabulary/')
 
 const crawlingCore = (doc: HTMLElement) => crawling(doc, "#types > table", "./src/vocabulary/core")
 const crawlingProperties = (doc: HTMLElement) => crawling(doc, "#properties > table", "./src/vocabulary/properties")
-const crawlingActivity = (doc: HTMLElement) => crawling(doc, "#activity-types > table", "./src/vocabulary/extended/activity")
+const crawlingActivity = (doc: HTMLElement) => crawling(doc, "#activity-types > table", "./src/vocabulary/extended/activity", (contents: string, name: string) => {
+  return `import type { Activity } from '../../core/Activity'
+
+${contents.replace(`export type ${name} = any`, `export interface ${name} extends Activity {\n  type: '${name}'\n}`)}`
+})
 const crawlingActor = (doc: HTMLElement) => crawling(doc, "#actor-types > table", "./src/vocabulary/extended/actor")
 const crawlingObject = (doc: HTMLElement) => crawling(doc, "#object-types > table", "./src/vocabulary/extended/object")
 
-function crawling(html: HTMLElement, selector: string, path: string) {
+function crawling(html: HTMLElement, selector: string, path: string, contentsCallback?: (contents: string, name: string) => string) {
   const table = html.querySelector(selector)
 
   table?.querySelectorAll('tbody').forEach((tbody) => {
@@ -48,14 +52,18 @@ function crawling(html: HTMLElement, selector: string, path: string) {
     const _extends = getExtends(tbody)
     const properties = getProperties(tbody)
 
-    const contents = `/**
+    let contents = `/**
  * ${notes.trim()}
  *
  * @see ${uri.trim()}${properties ? '\n * @properties ' + properties : ''}${_extends ? '\n * @extends ' + _extends : ""}${disjointWith ? '\n * @disjointWith ' + disjointWith : ""}${range ? '\n * @range ' + range : ""}${functional ? '\n * @functional ' + functional : ""}${subproperty ? '\n * @subproperty ' + subproperty : ""}${domain ? '\n * @domain ' + domain : ""}
  * @example
 ${examples.map((example) => ` * \`\`\`json\n * ${example}\n * \`\`\``).join("\n")}
  */
-export type ${name === 'object' ? '_object' : name} = any\n\n`
+export type ${name === 'object' ? '_object' : name} = any\n`
+
+    if (contentsCallback) {
+      contents = contentsCallback(contents, name)
+    }
 
     writeFileSync(`${path}/${name}.ts`, contents)
     writeFileSync(`${path}/index.ts`, `export type { ${name === 'object' ? '_object as object' : name} } from './${name}'\n`, { flag: 'a' })
