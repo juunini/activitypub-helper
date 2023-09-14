@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * An image document of any kind
  *
  * @see https://www.w3.org/ns/activitystreams#Image
- * @properties Inherits all properties from [Document](#dfn-document).
- * @extends [Document](#dfn-document)
+ * @properties Inherits all properties from [[Document](#dfn-document)](#dfn-document).
+ * @extends [[Document](#dfn-document)](#dfn-document)
  * @example
  * ```json
  * {
@@ -25,4 +27,6 @@
  * }
  * ```
  */
-export type Image = any
+export interface Image extends ObjectType {
+  type: 'Image'
+}

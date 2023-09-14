@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * Represents a video document of any kind.
  *
  * @see https://www.w3.org/ns/activitystreams#Video
- * @properties Inherits all properties from [Document](#dfn-document).
- * @extends [Document](#dfn-document)
+ * @properties Inherits all properties from [[Document](#dfn-document)](#dfn-document).
+ * @extends [[Document](#dfn-document)](#dfn-document)
  * @example
  * ```json
  * {
@@ -15,4 +17,6 @@
  * }
  * ```
  */
-export type Video = any
+export interface Video extends ObjectType {
+  type: 'Video'
+}

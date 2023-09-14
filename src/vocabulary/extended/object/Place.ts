@@ -1,11 +1,21 @@
+import type { Object as ObjectType } from '../../core/Object'
+import type {
+  accuracy,
+  altitude,
+  latitude,
+  longitude,
+  radius,
+  units
+} from '../../properties'
+
 /**
  * Represents a logical or physical location. See [5.3 Representing Places](#places) for additional information.
  *
  * @see https://www.w3.org/ns/activitystreams#Place
  * @properties [[accuracy](#dfn-accuracy)](#dfn-accuracy) | [[altitude](#dfn-altitude)](#dfn-altitude) | [[latitude](#dfn-latitude)](#dfn-latitude) | [[longitude](#dfn-longitude)](#dfn-longitude) | [[radius](#dfn-radius)](#dfn-radius) | [[units](#dfn-units)](#dfn-units)
 
-Inherits all properties from [Object](#dfn-object).
- * @extends [Object](#dfn-object)
+Inherits all properties from [[Object](#dfn-object)](#dfn-object).
+ * @extends [[Object](#dfn-object)](#dfn-object)
  * @example
  * ```json
  * {
@@ -26,4 +36,12 @@ Inherits all properties from [Object](#dfn-object).
  * }
  * ```
  */
-export type Place = any
+export interface Place extends ObjectType {
+  type: 'Place'
+  accuracy?: accuracy
+  altitude?: altitude
+  latitude?: latitude
+  longitude?: longitude
+  radius?: radius
+  units?: units
+}

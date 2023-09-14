@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * Represents a Web Page.
  *
  * @see https://www.w3.org/ns/activitystreams#Page
- * @properties Inherits all properties from [Document](#dfn-document).
- * @extends [Document](#dfn-document)
+ * @properties Inherits all properties from [[Document](#dfn-document)](#dfn-document).
+ * @extends [[Document](#dfn-document)](#dfn-document)
  * @example
  * ```json
  * {
@@ -14,4 +16,6 @@
  * }
  * ```
  */
-export type Page = any
+export interface Page extends ObjectType {
+  type: 'Page'
+}

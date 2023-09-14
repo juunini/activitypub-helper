@@ -1,3 +1,5 @@
+import type { Link } from '../../core/Link'
+
 /**
  * A specialized [Link](#dfn-link) that represents an @mention.
  *
@@ -15,4 +17,4 @@
  * }
  * ```
  */
-export type Mention = any
+export interface Mention extends Link {}

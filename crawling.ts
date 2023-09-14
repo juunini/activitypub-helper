@@ -40,7 +40,11 @@ const crawlingActor = (doc: HTMLElement) => crawling(doc, "#actor-types > table"
 
 ${contents.replace(`export type ${name} = any`, `export interface ${name} extends ObjectType {\n  type: '${name}'\n}`)}`
 })
-const crawlingObject = (doc: HTMLElement) => crawling(doc, "#object-types > table", "./src/vocabulary/extended/object")
+const crawlingObject = (doc: HTMLElement) => crawling(doc, "#object-types > table", "./src/vocabulary/extended/object", (contents: string, name: string) => {
+  return `import type { Object as ObjectType } from '../../core/Object'
+
+${contents.replace(`export type ${name} = any`, `export interface ${name} extends ObjectType {\n  type: '${name}'\n}`)}`
+})
 
 function crawling(html: HTMLElement, selector: string, path: string, contentsCallback?: (contents: string, name: string) => string) {
   const table = html.querySelector(selector)

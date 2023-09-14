@@ -1,9 +1,11 @@
+import type { Object as ObjectType } from '../../core/Object'
+
 /**
  * Represents any kind of event.
  *
  * @see https://www.w3.org/ns/activitystreams#Event
- * @properties Inherits all properties from [Object](#dfn-object).
- * @extends [Object](#dfn-object)
+ * @properties Inherits all properties from [[Object](#dfn-object)](#dfn-object).
+ * @extends [[Object](#dfn-object)](#dfn-object)
  * @example
  * ```json
  * {
@@ -15,4 +17,6 @@
  * }
  * ```
  */
-export type Event = any
+export interface Event extends ObjectType {
+  type: 'Event'
+}

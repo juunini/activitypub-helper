@@ -1,11 +1,18 @@
+import type { Object as ObjectType } from '../../core/Object'
+import type {
+  formerType,
+  deleted,
+  orderedItems
+} from '../../properties'
+
 /**
  * A Tombstone represents a content object that has been deleted. It can be used in [Collection](#dfn-collection)s to signify that there used to be an object at this position, but it has been deleted.
  *
  * @see https://www.w3.org/ns/activitystreams#Tombstone
  * @properties [[formerType](#dfn-formertype)](#dfn-formertype) | [[deleted](#dfn-deleted)](#dfn-deleted)
 
-Inherits all properties from [Object](#dfn-object).
- * @extends [Object](#dfn-object)
+Inherits all properties from [[Object](#dfn-object)](#dfn-object).
+ * @extends [[Object](#dfn-object)](#dfn-object)
  * @example
  * ```json
  * {
@@ -31,4 +38,9 @@ Inherits all properties from [Object](#dfn-object).
  * }
  * ```
  */
-export type Tombstone = any
+export interface Tombstone extends ObjectType {
+  type: 'Tombstone'
+  formerType?: formerType
+  deleted?: deleted
+  orderedItems?: orderedItems
+}
