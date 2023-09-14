@@ -8,11 +8,32 @@ fetch('https://www.w3.org/TR/activitystreams-vocabulary/')
   .then((response) => response.text())
   .then((html) => {
     const doc = parse(html)
-    crawlingProperties(doc)
+
+    switch (process.argv[2]) {
+      case 'core':
+        crawlingCore(doc)
+        break
+      case 'properties':
+        crawlingProperties(doc)
+        break
+      case 'activity':
+        crawlingActivity(doc)
+        break
+      case 'actor':
+        crawlingActor(doc)
+      case 'object':
+        crawlingObject(doc)
+    }
   })
 
-function crawlingProperties(html: HTMLElement) {
-  const table = html.querySelector("#properties > table")
+const crawlingCore = (doc: HTMLElement) => crawling(doc, "#types > table", "./src/vocabulary/core")
+const crawlingProperties = (doc: HTMLElement) => crawling(doc, "#properties > table", "./src/vocabulary/properties")
+const crawlingActivity = (doc: HTMLElement) => crawling(doc, "#activity-types > table", "./src/vocabulary/extended/activity")
+const crawlingActor = (doc: HTMLElement) => crawling(doc, "#actor-types > table", "./src/vocabulary/extended/actor")
+const crawlingObject = (doc: HTMLElement) => crawling(doc, "#object-types > table", "./src/vocabulary/extended/object")
+
+function crawling(html: HTMLElement, selector: string, path: string) {
+  const table = html.querySelector(selector)
 
   table?.querySelectorAll('tbody').forEach((tbody) => {
     const name = getName(tbody)
@@ -36,35 +57,10 @@ ${examples.map((example) => ` * \`\`\`json\n * ${example}\n * \`\`\``).join("\n"
  */
 export type ${name === 'object' ? '_object' : name} = any\n\n`
 
-    writeFileSync(`./src/vocabulary/properties/${name}.ts`, contents)
-    writeFileSync(`./src/vocabulary/properties/index.ts`, `export type { ${name === 'object' ? '_object as object' : name} } from './${name}'\n`, { flag: 'a' })
+    writeFileSync(`${path}/${name}.ts`, contents)
+    writeFileSync(`${path}/index.ts`, `export type { ${name === 'object' ? '_object as object' : name} } from './${name}'\n`, { flag: 'a' })
 })
 }
-
-// const table = document.querySelector("#properties > table")
-
-// table.querySelectorAll("tbody").forEach((tbody) => {
-//   const name = getName(tbody)
-//   const uri = getURI(tbody)
-//   const examples = getExamples(tbody)
-//   const notes = getNotes(tbody)
-//   const disjointWith = getDisjointWith(tbody)
-//   const range = getRange(tbody)
-//   const functional = getFunctional(tbody)
-//   const subproperty = getSubpropertyOf(tbody)
-//   const domain = getDomain(tbody)
-//   const _extends = getExtends(tbody)
-//   const properties = getProperties(tbody)
-
-//   console.log(`/**
-//  * ${notes.trim()}
-//  *
-//  * @see ${uri.trim()}${properties ? '\n * @properties ' + properties : ''}${_extends ? '\n * @extends ' + _extends : ""}${disjointWith ? '\n * @disjointWith ' + disjointWith : ""}${range ? '\n * @range ' + range : ""}${functional ? '\n * @functional ' + functional : ""}${subproperty ? '\n * @subproperty ' + subproperty : ""}${domain ? '\n * @domain ' + domain : ""}
-//  * @example
-// ${examples.map((example) => ` * \`\`\`json\n * ${example}\n * \`\`\``).join("\n")}
-//  */
-// export type ${name} = string\n\n`)
-// })
 
 const getName = (tbody: HTMLElement) => tbody.querySelector("tr:nth-child(1) > td:nth-child(1)")!.textContent
 const getURI = (tbody: HTMLElement) => tbody.querySelector("tr:nth-child(1) > td:nth-child(3)")!.textContent

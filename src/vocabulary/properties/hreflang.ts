@@ -18,4 +18,3 @@
  * ```
  */
 export type hreflang = any
-

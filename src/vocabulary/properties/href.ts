@@ -17,4 +17,3 @@
  * ```
  */
 export type href = any
-

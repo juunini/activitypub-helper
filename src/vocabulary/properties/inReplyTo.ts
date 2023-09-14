@@ -29,4 +29,3 @@
  * ```
  */
 export type inReplyTo = any
-

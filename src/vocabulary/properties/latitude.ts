@@ -19,4 +19,3 @@
  * ```
  */
 export type latitude = any
-

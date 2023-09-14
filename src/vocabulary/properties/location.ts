@@ -22,4 +22,3 @@
  * ```
  */
 export type location = any
-

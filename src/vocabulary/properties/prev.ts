@@ -38,4 +38,3 @@
  * ```
  */
 export type prev = any
-

@@ -17,4 +17,3 @@
  * ```
  */
 export type startTime = any
-

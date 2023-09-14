@@ -14,4 +14,3 @@
  * ```
  */
 export type type = any
-

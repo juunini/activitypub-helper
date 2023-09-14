@@ -38,4 +38,3 @@
  * ```
  */
 export type next = any
-

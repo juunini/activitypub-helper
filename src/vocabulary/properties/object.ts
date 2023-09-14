@@ -45,4 +45,3 @@ When used within a [Relationship](#dfn-relationship) describes the entity to whi
  * ```
  */
 export type _object = any
-

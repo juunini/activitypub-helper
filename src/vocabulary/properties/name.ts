@@ -25,4 +25,3 @@
  * ```
  */
 export type name = any
-

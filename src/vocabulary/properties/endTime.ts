@@ -17,4 +17,3 @@
  * ```
  */
 export type endTime = any
-

@@ -31,4 +31,3 @@ The notion of "context" used is intentionally vague. The intended function is to
  * ```
  */
 export type context = any
-

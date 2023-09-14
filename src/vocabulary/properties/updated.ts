@@ -17,4 +17,3 @@
  * ```
  */
 export type updated = any
-

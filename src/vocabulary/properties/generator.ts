@@ -19,4 +19,3 @@
  * ```
  */
 export type generator = any
-

@@ -20,4 +20,3 @@
  * ```
  */
 export type cc = any
-
