@@ -1,7 +1,7 @@
 import type { id, type } from '../properties'
 
 export interface Base {
-  '@context'?: string | string[]
+  '@context'?: any
   type?: type
   id?: id
   [key: string]: any
