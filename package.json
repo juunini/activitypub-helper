@@ -1,7 +1,7 @@
 {
   "name": "activitypub-helper",
-  "version": "0.2.6",
-  "description": "GitHub API helper",
+  "version": "0.3.0",
+  "description": "ActivityPub Helper",
   "homepage": "https://github.com/juunini/activitypub-helper-ts",
   "repository": "juunini/activitypub-helper-ts",
   "license": "MIT",
