@@ -1,6 +1,6 @@
 {
   "name": "activitypub-helper",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "ActivityPub Helper",
   "homepage": "https://github.com/juunini/activitypub-helper-ts",
   "repository": "juunini/activitypub-helper-ts",
