@@ -28,7 +28,7 @@ import type {
  * }
  * ```
  */
-export interface Link extends Base {
+interface LinkInterface extends Base {
   href?: href
   rel?: rel
   mediaType?: mediaType
@@ -38,3 +38,5 @@ export interface Link extends Base {
   width?: width
   preview?: preview
 }
+
+export type Link = LinkInterface | string

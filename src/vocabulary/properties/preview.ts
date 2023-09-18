@@ -26,4 +26,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type preview = string | Link | ObjectType
+export type preview = Link | ObjectType

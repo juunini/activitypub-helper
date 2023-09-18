@@ -42,4 +42,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type current = string | Link | CollectionPage
+export type current = Link | CollectionPage

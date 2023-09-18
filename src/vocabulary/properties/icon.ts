@@ -48,4 +48,4 @@ import type { Image } from '../extended/object/Image'
  * }
  * ```
  */
-export type icon = string | Link | Image | Array<string | Link | Image>
+export type icon = Link | Image | Array<Link | Image>

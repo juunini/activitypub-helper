@@ -47,4 +47,4 @@ When used within a [Relationship](#dfn-relationship) describes the entity to whi
  * }
  * ```
  */
-export type _object = string | Link | ObjectType | Note | Array<string | Link | ObjectType | Note>
+export type _object = Link | ObjectType | Note | Array<Link | ObjectType | Note>

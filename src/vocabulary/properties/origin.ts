@@ -26,4 +26,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type origin = ObjectType | Link | string
+export type origin = ObjectType | Link

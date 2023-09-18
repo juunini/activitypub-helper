@@ -22,4 +22,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type to = Array<string | Link | ObjectType>
+export type to = Array<Link | ObjectType>

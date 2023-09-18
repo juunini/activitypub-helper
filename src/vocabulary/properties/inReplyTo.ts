@@ -31,4 +31,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type inReplyTo = string | ObjectType | Link | Array<string | ObjectType | Link>
+export type inReplyTo = ObjectType | Link | Array<ObjectType | Link>

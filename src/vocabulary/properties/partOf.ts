@@ -29,4 +29,4 @@ import type { Collection } from '../core/Collection'
  * }
  * ```
  */
-export type partOf = string | Link | Collection
+export type partOf = Link | Collection

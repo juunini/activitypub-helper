@@ -32,4 +32,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type first = string | Link | CollectionPage
+export type first = Link | CollectionPage

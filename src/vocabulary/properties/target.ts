@@ -32,4 +32,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type target = string | Link | ObjectType
+export type target = Link | ObjectType

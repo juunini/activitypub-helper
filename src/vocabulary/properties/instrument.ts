@@ -25,4 +25,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type instrument = string | Link | ObjectType
+export type instrument = Link | ObjectType

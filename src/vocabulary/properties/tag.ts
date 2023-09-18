@@ -24,5 +24,5 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type tag = Array<string | Link | ObjectType>
+export type tag = Array<Link | ObjectType>
 export type tags = any

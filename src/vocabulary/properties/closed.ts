@@ -17,4 +17,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type closed = string | boolean | Link | ObjectType
+export type closed = boolean | Link | ObjectType

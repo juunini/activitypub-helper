@@ -40,4 +40,4 @@ import type { CollectionPage } from '../core/CollectionPage'
  * }
  * ```
  */
-export type next = Link | string | CollectionPage
+export type next = Link | CollectionPage

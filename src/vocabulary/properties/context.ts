@@ -33,4 +33,4 @@ The notion of "context" used is intentionally vague. The intended function is to
  * }
  * ```
  */
-export type context = string | ObjectType | Link | Array<string | Link | ObjectType>
+export type context = string | ObjectType | Link | Array<Link | ObjectType>

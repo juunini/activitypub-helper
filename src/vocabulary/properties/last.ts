@@ -32,4 +32,4 @@ import type { CollectionPage } from '../core/CollectionPage'
  * }
  * ```
  */
-export type last = string | Link | CollectionPage
+export type last = Link | CollectionPage

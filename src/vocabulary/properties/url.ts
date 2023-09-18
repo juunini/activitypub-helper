@@ -46,4 +46,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type url = string | Link | Array<string | Link>
+export type url = Link | Array<Link>

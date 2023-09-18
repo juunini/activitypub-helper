@@ -21,4 +21,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type generator = string | ObjectType | Link
+export type generator = ObjectType | Link

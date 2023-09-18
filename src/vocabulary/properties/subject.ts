@@ -26,4 +26,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type subject = string | Link | ObjectType
+export type subject = Link | ObjectType

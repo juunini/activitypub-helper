@@ -42,4 +42,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type image = string | Link | Image | Array<string | Link | Image>
+export type image = Link | Image | Array<Link | Image>
