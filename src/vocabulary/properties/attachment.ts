@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies a resource attached or related to an object that potentially requires special handling. The intent is to provide a model that is at least semantically similar to attachments in email.
@@ -23,5 +22,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type attachment = Array<ObjectType | Link>
-export type attachments = attachment
+export type attachment = stringOrLinkObject[]

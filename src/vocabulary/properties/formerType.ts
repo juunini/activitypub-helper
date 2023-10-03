@@ -1,4 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
+import type { type } from './type'
 
 /**
  * On a [Tombstone](#dfn-tombstone) object, the formerType property identifies the type of the object that was deleted.
@@ -18,4 +18,4 @@ import type { Object as ObjectType } from '../core/Object'
  * }
  * ```
  */
-export type formerType = string | ObjectType
+export type formerType = type

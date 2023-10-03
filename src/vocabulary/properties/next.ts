@@ -1,5 +1,5 @@
-import type { Link } from '../core/Link'
 import type { CollectionPage } from '../core/CollectionPage'
+import { type stringOrLink } from './_internal'
 
 /**
  * In a paged [Collection](#dfn-collection), indicates the next page of items.
@@ -40,4 +40,4 @@ import type { CollectionPage } from '../core/CollectionPage'
  * }
  * ```
  */
-export type next = Link | CollectionPage
+export type next = stringOrLink | CollectionPage

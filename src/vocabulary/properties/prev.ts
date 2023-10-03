@@ -1,5 +1,5 @@
-import type { Link } from '../core/Link'
 import type { CollectionPage } from '../core/CollectionPage'
+import { type stringOrLink } from './_internal'
 
 /**
  * In a paged [Collection](#dfn-collection), identifies the previous page of items.
@@ -40,4 +40,4 @@ import type { CollectionPage } from '../core/CollectionPage'
  * }
  * ```
  */
-export type prev = Link | CollectionPage
+export type prev = stringOrLink | CollectionPage

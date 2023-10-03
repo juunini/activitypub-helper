@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Indicates one or more entities for which this object is considered a response.
@@ -31,4 +30,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type inReplyTo = ObjectType | Link | Array<ObjectType | Link>
+export type inReplyTo = stringOrLinkObject | stringOrLinkObject[]

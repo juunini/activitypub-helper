@@ -1,6 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
-import type { Note } from '../extended/object/Note'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies an inclusive option for a Question. Use of anyOf implies that the Question can have multiple answers. To indicate that a Question can have only one answer, use [oneOf](#dfn-oneof).
@@ -27,4 +25,4 @@ import type { Note } from '../extended/object/Note'
  * }
  * ```
  */
-export type anyOf = Array<ObjectType | Link | Note>
+export type anyOf = stringOrLinkObject[]

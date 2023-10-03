@@ -1,6 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
-import type { Place } from '../extended/object/Place'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Indicates one or more physical or logical locations associated with the object.
@@ -25,4 +23,4 @@ import type { Place } from '../extended/object/Place'
  * }
  * ```
  */
-export type location = Place | ObjectType | Link
+export type location = stringOrLinkObject

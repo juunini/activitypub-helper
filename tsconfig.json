@@ -21,13 +21,8 @@
     ]
   },
   "files": [
-    "./src/.well-known/index.ts",
-    "./src/nodeinfo/index.ts",
-    "./src/vocabulary/properties/index.ts",
-    "./src/vocabulary/core/index.ts",
-    "./src/vocabulary/extended/activity/index.ts",
-    "./src/vocabulary/extended/actor/index.ts",
-    "./src/vocabulary/extended/object/index.ts",
-    "./src/vocabulary/extended/link/index.ts"
+    "src/.well-known/index.ts",
+    "src/nodeinfo/index.ts",
+    "src/vocabulary/index.ts"
   ]
 }

@@ -1,12 +1,13 @@
 {
   "name": "activitypub-helper",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "ActivityPub Helper",
   "homepage": "https://github.com/juunini/activitypub-helper-ts",
   "repository": "juunini/activitypub-helper-ts",
   "license": "MIT",
   "author": "juunini",
   "scripts": {
+    "download:contexts": "bun scripts/download-contexts.js",
     "build": "sh scripts/build.sh",
     "publish:prepare": "bun scripts/prepare-publish.js",
     "publish": "bun publish:prepare && sh scripts/publish.sh",

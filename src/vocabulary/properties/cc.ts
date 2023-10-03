@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies an Object that is part of the public secondary audience of this Object.
@@ -22,4 +21,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type cc = Array<Link | ObjectType>
+export type cc = stringOrLinkObject[]

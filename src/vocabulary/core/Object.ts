@@ -25,7 +25,10 @@ import type {
   cc,
   bcc,
   mediaType,
-  duration
+  duration,
+  summaryMap,
+  contentMap,
+  nameMap
 } from '../properties'
 
 /**
@@ -49,8 +52,10 @@ export interface Object extends Base {
   attributedTo?: attributedTo
   audience?: audience
   content?: content
+  contentMap?: contentMap
   context?: context
   name?: name
+  nameMap?: nameMap
   endTime?: endTime
   generator?: generator
   icon?: icon
@@ -62,6 +67,7 @@ export interface Object extends Base {
   replies?: replies
   startTime?: startTime
   summary?: summary
+  summaryMap?: summaryMap
   tag?: tag
   updated?: updated
   url?: url

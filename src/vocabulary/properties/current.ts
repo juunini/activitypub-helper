@@ -1,5 +1,5 @@
-import type { CollectionPage } from '../core/CollectionPage'
-import type { Link } from '../core/Link'
+import { type CollectionPage } from '../core/CollectionPage'
+import { type stringOrLink } from './_internal'
 
 /**
  * In a paged [Collection](#dfn-collection), indicates the page that contains the most recently updated member items.
@@ -42,4 +42,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type current = Link | CollectionPage
+export type current = stringOrLink | CollectionPage

@@ -1,5 +1,5 @@
-import type { Link } from '../core/Link'
 import type { CollectionPage } from '../core/CollectionPage'
+import { type stringOrLink } from './_internal'
 
 /**
  * In a paged [Collection](#dfn-collection), indicates the furthest proceeding page of the collection.
@@ -32,4 +32,4 @@ import type { CollectionPage } from '../core/CollectionPage'
  * }
  * ```
  */
-export type last = Link | CollectionPage
+export type last = stringOrLink | CollectionPage

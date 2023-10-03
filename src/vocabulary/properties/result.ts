@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource.
@@ -25,4 +24,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type result = Link | ObjectType
+export type result = stringOrLinkObject

@@ -1,1 +1,1 @@
-export type { Mention } from '../link/Mention'
+export type { Mention } from './Mention'

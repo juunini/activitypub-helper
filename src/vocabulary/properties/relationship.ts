@@ -1,4 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
+import { type stringOrObject } from './_internal'
 
 /**
  * On a [Relationship](#dfn-relationship) object, the relationship property identifies the kind of relationship that exists between [subject](#dfn-subject) and [object](#dfn-object).
@@ -24,4 +24,4 @@ import type { Object as ObjectType } from '../core/Object'
  * }
  * ```
  */
-export type relationship = string | ObjectType
+export type relationship = stringOrObject

@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Person } from '../extended/actor/Person'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * On a [Profile](#dfn-profile) object, the describes property identifies the object described by the Profile.
@@ -22,4 +21,4 @@ import type { Person } from '../extended/actor/Person'
  * }
  * ```
  */
-export type describes = string | ObjectType | Person
+export type describes = stringOrLinkObject

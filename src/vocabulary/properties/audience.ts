@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies one or more entities that represent the total population of entities for which the object can considered to be relevant.
@@ -21,4 +20,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type audience = ObjectType | Link | Array<ObjectType | Link>
+export type audience = stringOrLinkObject | stringOrLinkObject[]

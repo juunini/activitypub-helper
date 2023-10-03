@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * One or more "tags" that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference.
@@ -24,5 +23,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type tag = Array<Link | ObjectType>
-export type tags = any
+export type tag = stringOrLinkObject[]

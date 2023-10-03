@@ -1,4 +1,4 @@
-import type { Link } from '../core/Link'
+import { type stringOrLink } from './_internal'
 
 /**
  * Identifies one or more links to representations of the object
@@ -46,4 +46,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type url = Link | Array<Link>
+export type url = stringOrLink | stringOrLink[]

@@ -1,5 +1,5 @@
-import type { Link } from '../core/Link'
 import type { Collection } from '../core/Collection'
+import { type stringOrLink } from './_internal'
 
 /**
  * Identifies the [Collection](#dfn-collection) to which a [CollectionPage](#dfn-collectionpage) objects items belong.
@@ -29,4 +29,4 @@ import type { Collection } from '../core/Collection'
  * }
  * ```
  */
-export type partOf = Link | Collection
+export type partOf = stringOrLink | Collection

@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies one or more entities to which this object is attributed. The attributed entities might not be Actors. For instance, an object might be attributed to the completion of another activity.
@@ -38,4 +37,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type attributedTo = Array<string | ObjectType | Link>
+export type attributedTo = stringOrLinkObject | stringOrLinkObject[]

@@ -1,5 +1,5 @@
 import type { Image } from '../extended/object/Image'
-import type { Link } from '../core/Link'
+import { type stringOrLink } from './_internal'
 
 /**
  * Indicates an entity that describes an image for this object. Unlike the icon property, there are no aspect ratio or display size limitations assumed.
@@ -42,4 +42,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type image = Link | Image | Array<Link | Image>
+export type image = stringOrLink | Image | Array<stringOrLink | Image>

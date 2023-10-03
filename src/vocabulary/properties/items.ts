@@ -1,6 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
-import type { Note } from '../extended/object'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies the items contained in a collection. The items might be ordered or unordered.
@@ -46,5 +44,5 @@ import type { Note } from '../extended/object'
  * }
  * ```
  */
-export type items = Array<Link | ObjectType | Note>
+export type items = stringOrLinkObject[]
 export type orderedItems = items

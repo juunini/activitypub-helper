@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies the context within which the object exists or an activity was performed.
@@ -33,4 +32,4 @@ The notion of "context" used is intentionally vague. The intended function is to
  * }
  * ```
  */
-export type context = string | ObjectType | Link | Array<Link | ObjectType>
+export type context = stringOrLinkObject[]

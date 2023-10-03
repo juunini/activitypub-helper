@@ -7,7 +7,8 @@ import type {
   hreflang,
   height,
   width,
-  preview
+  preview,
+  nameMap
 } from '../properties'
 
 /**
@@ -28,15 +29,14 @@ import type {
  * }
  * ```
  */
-interface LinkInterface extends Base {
+export interface Link extends Base {
   href?: href
   rel?: rel
   mediaType?: mediaType
   name?: name
+  nameMap?: nameMap
   hreflang?: hreflang
   height?: height
   width?: width
   preview?: preview
 }
-
-export type Link = LinkInterface | string

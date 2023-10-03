@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies an entity that provides a preview of this object.
@@ -26,4 +25,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type preview = Link | ObjectType
+export type preview = stringOrLinkObject

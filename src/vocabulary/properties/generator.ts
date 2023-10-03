@@ -1,5 +1,4 @@
-import type { Object as ObjectType } from '../core/Object'
-import type { Link } from '../core/Link'
+import { type stringOrLinkObject } from './_internal'
 
 /**
  * Identifies the entity (e.g. an application) that generated the object.
@@ -21,4 +20,4 @@ import type { Link } from '../core/Link'
  * }
  * ```
  */
-export type generator = ObjectType | Link
+export type generator = stringOrLinkObject
